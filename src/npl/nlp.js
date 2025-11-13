@@ -1,8 +1,7 @@
-// src/nlp.js
 import OpenAI from "openai";
-import { OPENAI_API_KEY } from "./config.js";
+import { config } from '../config.js';
 
-const client = new OpenAI({ apiKey: OPENAI_API_KEY });
+const client = new OpenAI({ apiKey: config.openai.apiKey, });
 
 export async function interpretMessage(messageText) {
   const today = new Date().toISOString();
@@ -55,3 +54,5 @@ Hoje é ${today}.
     throw new Error("Não foi possível interpretar a mensagem");
   }
 }
+
+export { interpretMessage as analyzeText };

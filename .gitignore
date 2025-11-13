@@ -1,0 +1,26 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar arquivos de configuração do VSCode
+.vscode/
+
+# Ignorar arquivos de ambiente
+.env
+.env.*
+
+# Ignorar arquivos de logs
+logs/
+
+# Ignorar arquivos temporários
+temp/
+
+# Ignorar arquivos de configuração do Docker
+docker-compose.yml
+Dockerfile.bot
+Dockerfile.worker
+
+# Ignorar arquivos relacionados ao NPM
+package-lock.json
+
+# Ignorar outros arquivos de ambiente específicos
+*.local
